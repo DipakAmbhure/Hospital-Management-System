@@ -7,7 +7,7 @@ Batch : T4
 </pre>
 <br>
 <h2> Problem Statement </h2>
-<p style="text-indent : 2rem"> This Project is to Design and Implement The Database to Manage a general hospital Hospital.
+<p style="text-indent : 2rem"> This Project is part of DBMS course Mini Project objective is to  Design and Implement The Database System to Manage The general hospital Hospital.
   Hospital Having different wards and in each ward there are some doctors with different grades assigned to them. If doctor wants
   to admit any patient then each ward have some rooms to admit patients. Ward also consists of some workers which works of that 
   particular ward such as ward boys, nurses, cleaning staf etc. visitors can also come to meet any patient. 
