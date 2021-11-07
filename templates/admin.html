@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>HospitalManagementSystem</title>
+        </head>
+
+        <body>
+                <div style="text-align: center;">
+                        <H1 style="background-color:azure;">HospitalManagementSystem</H1>
+                        <H1 style="background-color:azure;">ADMIN LOGIN</H1>
+                </div>
+                <br>
+
+
+
+                <!--AdminID : 'HA00987200' , Admin Password: '1234'-->
+                <div class="wards">
+                        <h2 style="text-align: center;"> ADD NEW WARD</h2>
+                        <form action="../addward" method="post" style="margin-left: 7rem;"><br>
+                                Enter Ward Name: <input name="wardName" type="text" placeholder="New Name"><br><br>
+                                Enter Ward No: <input name="wardNo" type="text" placeholder="Number"><br><br>
+                                <input type="submit" value="Add" style="margin-left: 13rem;">
+                                {{ info1 }}
+                        </form>           
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <div class="rooms">
+                        <h2 style="text-align: center;"> ADD NEW ROOM</h2>
+                        <form action="../addroom" method="post" style="margin-left: 7rem;" >
+                                Enter Room No: <input name="roomNo" type="text" placeholder="Number"><br><br>
+                                <input type="submit" value="Add" style="margin-left: 13rem;">
+                                {{ info2 }}
+                        </form>           
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <div class="Doctor">
+                        <h2 style="text-align: center;"> ADD NEW DOCTOR</h2>
+                        <form action="/adddoctor" method="post">
+                                <div class="name" style="margin-left: 7rem;">
+                                        <b>Enter Doctor Name:</b> 
+                                        <input type="text" name="name">
+                                </div>
+                                <br>
+                                <div class="contactNo" style="margin-left: 7rem;">
+                                        <b>Enter Contact No.:</b>
+                                        <input type="text" name="contact">
+                                </div>
+                                <br>
+                                <div class="dob" style="margin-left: 7rem;">
+                                        <b>Enter Date of Birth:</b>
+                                        <input type="date" name="dob">
+                                </div>
+                                <br>
+                                <div class="genderD" style="margin-left: 7rem;">
+                                        <b>select Doctor's gender </b><br>
+                                        <input type="radio" name="gender" id="male1" value="male" style="margin-left: 2rem;">male <br>
+                                        <input type="radio" name="gender" id="female1" value="female" style="margin-left: 2rem;">female <br>
+                                        <input type="radio" name="gender" id="trans1" value="trans" style="margin-left: 2rem;">trans <br>
+                                </div>
+                                <br>
+                                <div class="address" style="margin-left: 9rem;">
+                                        <b style="margin-left: -2rem;">Enter Doctors address:</b><br><br>
+                                        LineNo1: <input type="text" name="LineNo"><br><br>
+                                        city: <input type="text" name="city"><br><br>
+                                        pincode: <input type="text" name="pincode"><br><br>
+                                        state: <input type="text" name="state"><br><br>
+                                </div>
+                                <br>
+                                <div class="specialization" style="margin-left: 7rem;">
+                                        <b>Enter specialization of doctor:</b>
+                                        <input type="text" name="specialization">
+                                </div>
+                                <br>
+                                <div class="Ward" style="margin-left: 7rem;">
+                                        <b>Enter Assigned WardNo of doctor:</b>
+                                        <input type="text" name="WardNo">
+                                </div>
+                                <br>
+                                <div class="salary" style="margin-left: 7rem;">
+                                        <b>Salry given to doctor:</b>
+                                        <input type="text" name="salary">
+                                </div>
+                                <br>
+                                <div class="grade" style="margin-left: 7rem;">
+                                        <b>Enter Grade</b>
+                                        <input type="text" name="grade">
+                                </div>
+                                <br>
+                                <div class="day-of-joining" style="margin-left: 7rem;">
+                                        <b>Enter Day of Joining:</b>
+                                        <input type="date" name="doj">
+                                </div>
+                                <br>
+                                <input type="submit" value="ADD" style="margin-left: 13rem;">
+                               
+                        </form>           
+                </div>
+
+                <br>
+                <hr>
+                <br>
+                <div class="worker">
+                        <h2 style="text-align: center;"> ADD NEW WORKER</h2>
+                        <form action="../addworker" method="post" style="margin-left: 7rem;" >
+                                <div class="name">
+                                        <b>Enter Worker's Name:</b> 
+                                        <input type="text" name="name">
+                                </div>
+                                <br>
+                                <div class="contactNo">
+                                        <b>Enter Contact No.:</b>
+                                        <input type="text" name="contact">
+                                </div>
+                                <br>
+                                <div class="dob">
+                                        <b>Enter Date of Birth:</b>
+                                        <input type="date" name="dob">
+                                </div>
+                                <br>
+                                <div class="gender">
+                                        <b>select worker's gender</b><br><br>
+                                        <input type="radio" name="gender" value="male" style="margin-left: 2rem;">male <br><br>
+                                        <input type="radio" name="gender" value="female" style="margin-left: 2rem;">female <br><br>
+                                        <input type="radio" name="gender" value="transgender" style="margin-left: 2rem;">trans <br><br>
+                                </div>
+                                <br>
+                                <div class="address">
+                                        <b>Enter worker's address:</b><br><br>
+                                        LineNo1: <input type="text" name="LineNo1" style="margin-left: 2rem;"><br><br>
+                                        city: <input type="text" name="city" style="margin-left: 2rem;"><br><br>
+                                        pincode: <input type="text" name="pincode" style="margin-left: 2rem;"><br><br>
+                                        state: <input type="text" name="state" style="margin-left: 2rem;"><br><br>
+                                </div>
+                                <br>
+                                <div class="position">
+                                        <b>Enter position of worker:</b>
+                                        <input type="text" name="position">
+                                </div>
+                                <br>
+                                <div class="salary">
+                                        <b>Salry given to worker:</b>
+                                        <input type="text" name="salary">
+                                </div>
+                                <br>
+                                <div class="WardNo">
+                                        <b>Ward No. given to worker:</b>
+                                        <input type="text" name="WardNo">
+                                </div>
+                                <br>
+                                <div class="day-of-joining">
+                                        <b>Enter Day of Joining:</b>
+                                        <input type="date" name="doj">
+                                </div>
+                                <br>
+                                <input type="submit" value="ADD" style="margin-left: 13rem;" >
+                                {{ info4 }}
+
+
+                        </form>           
+                </div>
+
+
+                <br>
+                <hr>
+                <br>
+                <br>
+                <hr>
+                <br>
+
+
+        </body>
+
+</html>

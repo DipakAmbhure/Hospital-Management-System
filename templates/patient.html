@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>HospitalManagementSystem</title>
+        </head>
+
+        <body style="margin-left: 7rem;">
+                <h1 style="text-align: center;">PatientInformation</h1>
+                <h2 style="text-align: center;">Patient Details </h2>
+                <b>Name</b> : {{ CommonDetails[0] }}<br> <br>
+                <hr>
+                <b>ID</b> : {{ ID }}<br><br>
+                <hr>
+                <b>Address</b>: <br><br>
+                <div style="margin-left: 5rem;">
+                        {{ CommonDetails[1] }},<br> <br>
+                        {{ CommonDetails[2] }}, {{ CommonDetails[3] }}<br><br> 
+                        {{ CommonDetails[4] }},<br><br>
+                </div>
+                <hr>
+                <b>ContactNo</b> : {{ CommonDetails[5] }}<br><br>
+                <hr>
+                <b>Gender</b> : {{ CommonDetails[6] }}<br><br>
+                <hr>
+                <b>DOB:</b> {{ CommonDetails[7] }} <br><br>
+                <hr>
+                <b>WardName:</b> {{ Receipt[2] }}<br><br>
+                <hr>
+                <b>Registerd ON:</b> {{ Receipt[0] }} {{ Receipt[2]}}<br>
+                <br>
+                <hr>
+                <br>
+                <h2 style="text-align: center;">Patient Treatment Details </h2>
+                <h3 style="margin-left:10rem ;">This Doctors Treated Patient</h3>
+
+                        <b style="font-size: 1rem;margin-left:10rem ;">Your First Assigned Doctor Is : {{ Receipt[3] }} ID : {{ Receipt[4] }}  </b>
+
+                        <table style="margin-left:10rem ;">
+                                <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                </tr>
+
+                                {% for doctor in Doctors %}
+                                <tr>
+                                        {% for data in doctor %}
+                                        <td style="text-align: center;">{{data}}</td>
+                                        {%endfor%}
+                                </tr>
+                                {% endfor %}
+                        </table>
+
+                        <h3 style="margin-left:10rem ;">Prescription</h3>
+                        <div class="prescription" style="margin-left:10rem ;text-indent: 2rem ; padding:.5rem; border:.2rem solid black; width:35rem; height:10rem">
+                                {{ prescription }}
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <h3 style="margin-left:10rem ;">Dignosis</h3>
+                        <div class="dignosis" style="margin-left:10rem ;text-indent: 2rem ; padding:.5rem; border:.2rem solid black; width:35rem; height:10rem">
+                                {{ dignosis }}
+                        </div>
+
+                <br>
+                <hr>
+                <br>
+                
+
+                
+                <h2 style="text-align: center;">Admited Deatils </h2>
+                <table style="width: 40rem; padding:2rem;margin-left:10rem ; ">
+                        <tr>
+                                <th> WardNo </th>
+                                <th> RoomNO </th>
+                                <th> FromDate </th>
+                                <th> TillDate </th>
+                                
+                                
+                        </tr>
+                        <tr>
+                        {% for data in Admited %}
+                        {% for col in data %}
+                                <td style="text-align: center;">{{col}}</td>
+                        {%endfor%}
+                        {%endfor%}
+                        </tr>
+                </table>
+                <br>
+                <hr>
+                <br>
+                
+                <h2 style="text-align: center;">PAYMENT STATUS </h2>
+                <table style="width: 30rem; padding:2rem; margin-left:10rem ">
+                        <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                        </tr>
+
+                        {% for row in Payments %}
+                        <tr>
+                                {% for data in row %}
+                                <td style="text-align: center;">{{data}}</td>
+                                {%endfor%}
+                        </tr>
+                        {% endfor %}
+                </table>
+
+
+        </body>
+
+
+</html>

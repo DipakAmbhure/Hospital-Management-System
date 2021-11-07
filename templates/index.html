@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head style="text-align: center;">
+        <title>HospitalManagementSystem</title>
+        
+</head>
+
+<body >
+        <div style="text-align: center;">
+                <H1 style="background-color:azure;">HospitalManagementSystem</H1>
+        </div>
+        <br>
+        <div class="RegisterPatient" >
+                <h2 style="text-align: center;"> Register New Patient </h2>
+                <form action="/register" method="post">
+                        <br>
+                        <div class="name" style="margin-left: 7rem;">
+                                <b>Enter Patient Name:</b> 
+                                <input type="text" name="name">
+                        </div>
+                        <br>
+                        <div class="contactNo" style="margin-left: 7rem;">
+                                <b>Enter Contact No.:</b>
+                                <input type="text" name="contact">
+                        </div>
+                        <br>
+                        <div class="dob" style="margin-left: 7rem;">
+                                <b>Enter Date of Birth:</b>
+                                <input type="date" name="dob">
+                        </div>
+                        <br>
+                        <div class="gender" style="margin-left: 9rem;">
+                                <span style="margin-left:-2rem"><b>select you gender</b></span><br>
+                                <input type="radio" name="gender" value="male">male <br>
+                                <input type="radio" name="gender" value="female">female <br>
+                                <input type="radio" name="gender" value="transgender">trans <br>
+                        </div>
+                        <br>
+                        <div class="address" style="margin-left: 9rem;  " >
+                                <span style="margin-left:-2rem"><b>Enter you address:</b></span><br><br>
+                                <b>LineNo1:</b> <input type="text" name="LineNo1" style="margin-left: 1.3rem;"><br><br>
+                                <b>city:</b><input type="text" name="city" style="margin-left: 3.5rem;"><br><br>
+                                <b>pincode:</b> <input type="text" name="pincode" style="margin-left: 1.5rem;"><br><br>
+                                <b>state:</b> <input type="text" name="state" style="margin-left: 3rem;"><br><br>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="problem" style="margin-left: 9rem;">
+                                <span style="margin-left: -2rem;"><b>what treatement you want</b></span><br>
+                                <input type="radio" name="problem" value="eyes">Eyes<br>
+                                <input type="radio" name="problem" value="ears">Ears<br>
+                                <input type="radio" name="problem" value="tests">Body Tests <br>
+                                <input type="radio" name="problem" value="childrens">childrens <br>
+                                <input type="radio" name="problem" value="Womens">Womens <br>
+                                <input type="radio" name="problem" value="Bones">Bones <br>
+                                <input type="radio" name="problem" value="Muscles">Muscles <br>
+                                <input type="radio" name="problem" value="other">other <br>
+                                <input type="radio" name="problem" value="Hairs">Hairs <br>
+                        </div>
+                        <br>
+                        <div class="registersubmit" style="margin-left:13rem">
+                                <input type="submit" value="Register" style="width: 5rem; height:2rem">
+                                <br>
+                        </div>
+                        <br>
+                </form>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <div class="VisitorSection">
+                <h2 style="text-align: center;"> New Visitor </h2>
+
+                <form action="/visitor" method="post">
+                        
+                        <div class="name" style="margin-left: 7rem;">
+                                <b>Enter Visitor Name: </b>
+                                <input type="text" name="name">
+                        </div>
+                        <br>
+                        <div class="contactNo" style="margin-left: 7rem;">
+                                <b>Enter Contact No.:</b>
+                                <input type="text" name="contact">
+                        </div>
+                        <br>
+                        <div style="margin-left: 7rem;">
+                                <b>Enter Patient ID</b>
+                                <input type="text" name="PID"> <br>
+                        </div>
+                        <br>
+                        <div class="relation" style="margin-left: 7rem;">
+                                <b>Enter Relation With Patient:</b>
+                                <input type="text" name="relation">
+                        </div>
+                        <br>
+                        
+                        <div class="visitorsubmit" style="margin-left: 13rem;">
+                                <input type="submit" value="Register" style="width: 5rem; height:2rem">
+                                <br>
+                        </div>
+                        <br>
+                </form>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <br><br><hr>
+        <div class="login" style="margin-left: 40%;">
+                <h2 style="text-align: center; margin-left: -69%"> Login Section </h2>
+                <form action="/login" method="post" ><br>
+                        <input type="text" name="username" placeholder="EnterID"><br><br>
+                        <input name="passwordKey" placeholder="EnterPassWord"><br><br>
+                        <input type="submit" value="login" style="margin-left: 3rem; width:5rem; height:1.2rem">
+                </form>
+                <div class="status">{{ info }}</div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <hr>
+        <br>
+</body>
+
+</html>

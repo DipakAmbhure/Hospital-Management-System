@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <title>HospitalManagementSystem</title>
+        </head>
+        
+        <body style="margin-left: 7rem;">
+                <h1 style="background-color:azure;text-align: center;">TreateMent of Patient</h1>
+                <h2>Patient ID : {{ PID }}</h2>
+                <h2>By Doctor : {{ DID}}</h2>
+                <div class="treatment">
+                        <form action='/enterdata' method="POST">
+
+                        <input type="hidden" name="PId" value="{{ PID }}">
+                        <input type="hidden" name="DId" value="{{ DID }}">
+                        <input type="hidden" name='admited' value="{{ admited[0] }}">
+                        <div class="diagnosis" >
+                                <b>Diagnosis</b> <br> 
+                                 <textarea name="diagnosis" style="margin-left:10rem ;text-indent: 2rem ; padding:.5rem; border:.2rem solid black; width:35rem; height:10rem"> {{DATA[1][1]}} </textarea>
+                        </div>        
+                        <br><hr><br>
+                        
+                        <div class="prescription">
+                                <b>Prescription:</b> <br>
+                                <textarea type="text" name="prescription" style="margin-left:10rem ;text-indent: 2rem ; padding:.5rem; border:.2rem solid black; width:35rem; height:10rem">{{DATA[1][0]}}</textarea>
+                        </div>
+                        <br><hr><br>
+                        <div class="anotherdoctor"><br>
+                                <b>Go For Higher Grade Doctor</b><br><br>
+                                <input type="radio" name="nextdoctor" value="yes" style="margin-left: 2rem;">Yes <br><br>
+                                <input type="radio" name="nextdoctor" value="no" style="margin-left: 2rem;">No <br><br>
+                                <span style="margin-left: 2rem;">if yes Enter Grade :</span><input type="text" name="nextgrade" ><br><br>
+
+                        </div>
+                        <br><hr><br>
+                        
+                        <div class="admitStatus">
+                                {% if admited[0]=='False' %}
+                                <b>Admit This Patient:</b><br><br>
+                                {% endif %}
+                                {% if admited[0]=='True' %}
+                                <b>Patient IS admited in roomNo : {{admited[1][0]}}<br> wardNo : {{admited[1][1]}} Discharge Him/her </b><br><br>
+                                {% endif %}
+                                
+                                <input type="radio" name="admit" value="yes" style="margin-left: 2rem;">Yes<br><br>
+                                <input type="radio" name="admit" value="no" style="margin-left: 2rem;">No <br><br>
+                        </div>
+                        
+
+                        <input type="submit" value="SAVE" style="margin-left: 10rem;">
+                        {{info1}}
+
+
+                        </form>
+                        </div>
+                </div>
+                <br><br><hr><hr><br><br>
+                
+        </body>
+</html>

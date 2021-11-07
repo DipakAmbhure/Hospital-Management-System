@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+                <title>HospitalManagementSystem</title>
+                <h1 style="text-align: center;">Doctor Information</h1>
+        </head>
+
+        <body style="margin-left: 10rem;">
+                <div >
+                Hello {{Name}} !! <br>
+                ID : {{ ID }} <br>
+                Ward NO. : {{ WardNo }}
+                specialization : {{ specialization }}
+                </div> 
+                <br><hr><br>
+                <div class="hastotreat" >
+                        <h2 style="text-align: center;">Patient Has to treat</h2>
+                        <table style="width: 30rem; padding:2rem">
+                                <tr>
+                                        <th>Patient ID</th>
+                                        <th>Treat</th>
+                                </tr>
+
+                                {% for Patient in PatientToTreat %}
+                                <tr>
+                                        {% for PID in Patient %}
+                                        <td style="text-align: center;"> {{ PID }} </td>
+                                        <td style="text-align: center;"> <form action="/treatpatient" method="post">
+                                                <input type="hidden" name="PId" value="{{ PID }}">
+                                                <input type="hidden" name="DId" value="{{ ID }}">
+                                                <input type="submit" value="Treat">
+                                        </form> </td>
+                                        {% endfor %}
+                                </tr>
+                                {% endfor %}
+
+
+                        </table>
+
+                </div>
+                <br><hr><br>
+                <div class="treatedpatients">
+                        <h2 style="text-align: center;">This patient has treated</h2>
+                        <table style="width: 30rem; padding:2rem">
+                                <tr>
+                                        <th>Patient ID</th>
+                                        <th>Date</th>
+                                        <th>Details</th>
+                                </tr>
+
+                                {% for Patient in PatientTreated %}
+                                <tr>
+                                        {% for ID in Patient %}
+                                        <td style="text-align: center;"> {{ ID }} </td>
+                                        {% endfor %}
+                                </tr>
+                                {% endfor %}
+                        </table>
+                </div>
+
+                <br><hr><br>
+                <div class="doctorDetails">
+                        {% if CommonDetails != "" %}<br><br>
+                        <h2 style="text-align: center;">Details of Doctor</h2><br>
+                        <b>Name :</b> {{Name}}<br> <br>
+                        <b>Grade :</b> {{Grade}}<br><br>
+                        <b>Specialization:</b> {{ specialization }}<br><br>
+                        <b>Address:</b> <br><br>
+                        <div style="margin-left: 5rem;">
+                                {{ CommonDetails[1] }},<br> <br>
+                                {{ CommonDetails[2] }}, {{ CommonDetails[3] }}<br> <br>
+                                {{ CommonDetails[4] }},<br><br>
+                        </div>
+                        <b>ContactNo :</b> {{ CommonDetails[5] }}<br> <br>
+                        <b>Gender :</b> {{ CommonDetails[6] }}<br><br>
+                        <b>DOB:</b> {{ CommonDetails[7] }} <br><br>
+                        <b>WardName:</b> {{ WardName }}<br><br>
+                        <b>Working Since:</b> {{ doj }}<br><br>
+                        <b>Current Salary:</b> {{ salary }}<br><br>
+                        {% endif %}
+                        <form action='/showalldoctordata' method="post">
+                                <input type="hidden" name="Id" value="{{ ID }}" >
+                                <input type="submit" value="Show My All Data" style="margin-left: 10rem;">
+                        </form>
+                </div>
+
+                <br><br><hr><hr><br><br>
+
+        </body>
+
+
+</html>
