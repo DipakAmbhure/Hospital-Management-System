@@ -68,6 +68,18 @@ doctor to treat patient</li>
   </ul>
 </pre>
 
+<h2> Payment Section </h2>
+<pre>
+  <ul>
+      <li> Can Record Patient Payment </li>
+      <li> Can See all Payment History </li>
+      <li> can see all patient who has got treatment but
+not paid yet </li>
+
+  </ul>
+
+</pre>
+
 
 <h2> Worker </h2>
 <pre>
