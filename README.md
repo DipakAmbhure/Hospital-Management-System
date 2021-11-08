@@ -102,32 +102,40 @@ not paid yet </li>
 
 <h2> SnapShots </h2>
 
-<b>admin</b>
+
+<h3>index</h3>
+![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index1.png)
+![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index2.png)
+<h3>.<h3>
+<h3>.<h3>
+<h3>admin</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin2.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin3.png)
-
-<b>doctor</b>
+<h3>.<h3>
+<h3>.<h3>
+<h3>doctor</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/doctor1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/doctor2.png)
-
-<b>index</b>
-![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index1.png)
-![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index2.png)
-
-<b>patient</b>
+<h3>.<h3>
+<h3>.<h3>
+<h3>patient</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient2.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient3.png)
-
-<b>payment</b>
+<h3>.<h3>
+<h3>.<h3>
+<h3>payment</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/payment1.png)
-
-<b>treatment</b>
+<h3>.<h3>
+<h3>.<h3>
+<h3>treatment</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/treatment1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/treatment2.png)
-
-<b>worker</b>
+<h3>.<h3>
+<h3>.<h3>
+<h3>worker</h3>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/worker1.png)
-
+<h3>.<h3>
+<h3>.<h3>
 
