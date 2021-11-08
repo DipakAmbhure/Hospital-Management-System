@@ -100,32 +100,34 @@ not paid yet </li>
 
 
 
-<h1> SnapShots </h1>
-<br>
+<h2> SnapShots </h2>
+
 <b>admin</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin2.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/admin3.png)
-<br>
+
 <b>doctor</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/doctor1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/doctor2.png)
-<br>
+
 <b>index</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/index2.png)
-<br>
+
 <b>patient</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient2.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/patient3.png)
-<br>
+
 <b>payment</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/payment1.png)
-<br>
+
 <b>treatment</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/treatment1.png)
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/treatment2.png)
-<br>
+
 <b>worker</b>
 ![alt text](https://github.com/DipakAmbhure/Hospital-Management-System/blob/main/snapshots/worker1.png)
+
+
