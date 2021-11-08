@@ -2,10 +2,14 @@
 
 <html>
         <head>
-                <title>HospitalManagementSystem</title>
+                <title>WorkerSection</title>
         </head>
 
-        <body>
+        <body style="margin-left: 7rem;">
+                <div style="text-align: center;">
+                        <H1 style="background-color:azure;">HospitalManagementSystem</H1>
+                </div>
+
                 <br>
                 Hello {{Name}} !! <br>
                 ID : {{ ID }} <br>
@@ -14,13 +18,13 @@
 
                 <div class="attendance">
                         <form action="/submitattendance" method="post">
-                                <h2>
+                                <h2 style="text-align: center;">
                                         Submit todays attendance
                                 </h2>
                                 <input type="hidden" value="{{ ID }}" name="Id">
                                 <input type="radio" name="attendance" value="present">Present <br>
                                 <input type="radio" name="attendance" value="absent">Absent <br>
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Submit" style="margin-left: 6rem;">
                                 {{ status }}
 
                         
@@ -30,7 +34,7 @@
                 </div>
                 <br><hr>
                 <div class="PastAttendances">
-                        <h2>Past Attendances</h2>
+                        <h2 style="text-align: center;">Past Attendances</h2>
                         <table>
                                 <tr>
                                         <th>Date</th>
@@ -54,7 +58,7 @@
                 <hr>
                 <div class="workerDetails">
                         {% if CommonDetails != "" %}
-                        <h1>Details of Worker</h1>
+                        <h1 style="text-align: center;">Details of Worker</h1>
                         Name : {{Name}}<br> 
                         position: {{ position }}<br>
                         Address: <br>
@@ -70,7 +74,7 @@
                         {% endif %}
                         <form action='/showallworkerdata' method="post">
                                 <input type="hidden" name="Id" value="{{ ID }}" >
-                                <input type="submit" value="Show My All Data">
+                                <input type="submit" value="Show My All Data" >
                         </form>
                 </div>
 
