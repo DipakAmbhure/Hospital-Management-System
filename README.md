@@ -100,7 +100,7 @@ not paid yet </li>
 
 
 
-<h2> SnapShots </h2>
+<h3> SnapShots </h3>
 
 
 <h3>index</h3>
